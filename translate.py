@@ -115,7 +115,3 @@ def translate_app_string(target_lang):
   with io.open(path_to_i18n_languages + translate_to+".json", 'w', encoding='utf8') as f:
     newData = json.dumps(translatedStrings, ensure_ascii=False, indent=4)
     f.write(newData)
-
-
-translate_app_store_entry()
-#translate_app_string("nl")
